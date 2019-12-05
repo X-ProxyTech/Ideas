@@ -1,14 +1,15 @@
-name: Discord Notification
+name: Notification on push
 
-
-on: [push, issues, pull_request]
+on:
+  push:
+    branches:
+    - master
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
 
-    
     steps:
     - name: Discord notification
       env:
