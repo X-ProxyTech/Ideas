@@ -1,5 +1,5 @@
 name: Discord Notification
-on: [issues]
+on: [issue_comment, issues]
 jobs:
   build:
     runs-on: ubuntu-latest
